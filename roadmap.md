@@ -1,5 +1,10 @@
 # Roadmap
 
+## Own-backend migration preparation
+- [x] Prepare source handover, configuration template, migration inventory, and cutover/rollback guide
+- [x] Inspect downloadable package for excluded secrets and generated/dependency files
+- [ ] Restore and verify destination — blocked until user supplies their own project and official database/storage exports
+
 ## Quote and custom requests
 - [x] Full request QA: 29 automated tests; signed-in account isolation, prohibited offers/status writes, rate limits, image validation, informational replies, replaced offers, accept/decline, desktop/mobile layout; temporary rows/photos removed
 - [x] Private request storage, conversation replies, and offer decisions

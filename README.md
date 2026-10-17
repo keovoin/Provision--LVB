@@ -42,3 +42,7 @@ bun run dev
 ## License
 
 Proprietary. All rights reserved.
+
+## Backend ownership handover
+
+See [the migration guide](docs/migration/README.md) for exports, private storage, configuration, independent hosting and cutover checks. Preparation only: the current Cloud app remains unchanged. Database/user exports and service secrets are not included in the repository.

@@ -19,3 +19,4 @@
 - Storefront-visible settings (footer text, links, exchange rate, delivery rule) are read through the `get_storefront_info()` function, because `app_settings` itself is staff-only.
 - Delivery fees are added by a BEFORE INSERT trigger on customer self-checkout orders, so the cart only previews and the database stays the source of truth for totals.
 - Daily backups are JSON snapshots in the owner-only `db_backups` table created by pg_cron (last 14 kept); downloads happen from the admin Backups page.
+- Keep own-backend migration handover under `docs/migration` and destination rewiring in a separate deployment branch; official database exports plus separately transferred private storage preserve identity without disrupting the managed app.
