@@ -1,0 +1,21 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "./design-system/provisionkh/theme.css";
+
+@layer base {
+  h1, h2, h3, strong { letter-spacing: 0; }
+  button, a, input, textarea, select { -webkit-tap-highlight-color: transparent; }
+}
+
+.store-bottom-nav { padding-bottom: env(safe-area-inset-bottom, 0px); }
+.product-purchase-bar { bottom: calc(5rem + env(safe-area-inset-bottom, 0px)); }
+.operations-app table { font-variant-numeric: tabular-nums; }
+.operations-app thead { background: var(--color-muted); }
+.operations-app th { color: var(--color-muted-foreground); font-weight: 500; }
+.operations-app tbody tr { transition: background-color 150ms; }
+.operations-app tbody tr:hover { background: var(--color-muted); }
+.operations-app td, .operations-app th { padding-block: 1rem; }
+@media (min-width: 768px) { .product-purchase-bar { bottom: 1rem; } }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}

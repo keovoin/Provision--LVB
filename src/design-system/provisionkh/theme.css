@@ -1,0 +1,107 @@
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    letter-spacing: 0;
+  }
+}
+
+@theme inline {
+  --font-sans: "Inter", "Noto Sans Khmer", ui-sans-serif, system-ui, sans-serif;
+  --font-khmer: "Noto Sans Khmer", "Inter", sans-serif;
+  --color-background: var(--pk-background);
+  --color-foreground: var(--pk-foreground);
+  --color-surface: var(--pk-surface);
+  --color-surface-raised: var(--pk-surface-raised);
+  --color-muted: var(--pk-muted);
+  --color-muted-foreground: var(--pk-muted-foreground);
+  --color-primary: var(--pk-primary);
+  --color-primary-hover: var(--pk-primary-hover);
+  --color-primary-foreground: var(--pk-primary-foreground);
+  --color-secondary: var(--pk-secondary);
+  --color-secondary-foreground: var(--pk-secondary-foreground);
+  --color-success: var(--pk-success);
+  --color-success-subtle: var(--pk-success-subtle);
+  --color-warning: var(--pk-warning);
+  --color-warning-subtle: var(--pk-warning-subtle);
+  --color-destructive: var(--pk-destructive);
+  --color-destructive-subtle: var(--pk-destructive-subtle);
+  --color-info: var(--pk-info);
+  --color-border: var(--pk-border);
+  --color-input: var(--pk-input);
+  --color-ring: var(--pk-ring);
+  --color-scrim: oklch(0.16 0 0);
+  --color-chart-1: var(--pk-chart-1);
+  --color-chart-2: var(--pk-chart-2);
+  --color-chart-3: var(--pk-chart-3);
+  --color-chart-4: var(--pk-chart-4);
+  --radius-control: 0.5rem;
+  --radius-panel: 0.5rem;
+  --shadow-panel: 0 1px 2px 0 rgb(15 23 42 / 0.04), 0 12px 32px -12px rgb(15 23 42 / 0.12);
+  --shadow-overlay: 0 18px 48px -20px rgb(15 23 42 / 0.24);
+}
+
+:root {
+  --pk-background: oklch(0.985 0 0);
+  --pk-foreground: oklch(0.205 0.012 265);
+  --pk-surface: oklch(1 0 0);
+  --pk-surface-raised: oklch(1 0 0);
+  --pk-muted: oklch(0.965 0.005 264);
+  --pk-muted-foreground: oklch(0.52 0.018 264);
+  --pk-primary: oklch(0.705 0.213 47.6);
+  --pk-primary-hover: oklch(0.646 0.222 41.1);
+  --pk-primary-foreground: oklch(1 0 0);
+  --pk-secondary: oklch(0.95 0.027 67);
+  --pk-secondary-foreground: oklch(0.49 0.16 40);
+  --pk-success: oklch(0.627 0.194 149.2);
+  --pk-success-subtle: oklch(0.962 0.044 156.7);
+  --pk-warning: oklch(0.666 0.179 58.3);
+  --pk-warning-subtle: oklch(0.962 0.059 95.6);
+  --pk-destructive: oklch(0.577 0.245 27.3);
+  --pk-destructive-subtle: oklch(0.971 0.013 17.4);
+  --pk-info: oklch(0.588 0.158 242);
+  --pk-border: oklch(0.91 0.009 264);
+  --pk-input: oklch(0.88 0.012 264);
+  --pk-ring: oklch(0.705 0.213 47.6);
+  --pk-chart-1: oklch(0.705 0.213 47.6);
+  --pk-chart-2: oklch(0.627 0.194 149.2);
+  --pk-chart-3: oklch(0.588 0.158 242);
+  --pk-chart-4: oklch(0.666 0.179 58.3);
+}
+
+.dark {
+  --pk-background: oklch(0.16 0.012 265);
+  --pk-foreground: oklch(0.97 0.004 264);
+  --pk-surface: oklch(0.205 0.014 265);
+  --pk-surface-raised: oklch(0.245 0.015 265);
+  --pk-muted: oklch(0.27 0.014 265);
+  --pk-muted-foreground: oklch(0.72 0.015 264);
+  --pk-primary: oklch(0.75 0.18 52);
+  --pk-primary-hover: oklch(0.79 0.16 57);
+  --pk-primary-foreground: oklch(0.16 0.012 265);
+  --pk-secondary: oklch(0.3 0.055 45);
+  --pk-secondary-foreground: oklch(0.92 0.045 65);
+  --pk-success: oklch(0.72 0.17 150);
+  --pk-success-subtle: oklch(0.28 0.065 151);
+  --pk-warning: oklch(0.78 0.16 70);
+  --pk-warning-subtle: oklch(0.3 0.055 70);
+  --pk-destructive: oklch(0.68 0.21 25);
+  --pk-destructive-subtle: oklch(0.3 0.07 25);
+  --pk-info: oklch(0.7 0.13 240);
+  --pk-border: oklch(1 0 0 / 12%);
+  --pk-input: oklch(1 0 0 / 18%);
+  --pk-ring: oklch(0.75 0.18 52);
+  --pk-chart-1: oklch(0.75 0.18 52);
+  --pk-chart-2: oklch(0.72 0.17 150);
+  --pk-chart-3: oklch(0.7 0.13 240);
+  --pk-chart-4: oklch(0.78 0.16 70);
+}

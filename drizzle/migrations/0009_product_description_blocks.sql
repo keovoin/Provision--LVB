@@ -1,0 +1,2 @@
+ALTER TABLE public.products ADD COLUMN IF NOT EXISTS description jsonb NOT NULL DEFAULT '[]'::jsonb;
+COMMENT ON COLUMN public.products.description IS 'Ordered content blocks: {type:text,km,en} or {type:image,path}';

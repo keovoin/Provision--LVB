@@ -1,0 +1,202 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1791517188690,
+      "tag": "0000_create_provisionkh_commerce",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1791517307970,
+      "tag": "0001_add_checkout_and_storage_policies",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1791518079523,
+      "tag": "0002_add_live_payment_tracking",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1791519185778,
+      "tag": "0003_disable_payment_simulation",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1791520003719,
+      "tag": "0004_tighten_settings_and_photo_reads",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1791520437448,
+      "tag": "0005_add_phone_sign_in",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1791522360170,
+      "tag": "0006_add_cod_link_payment_methods",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "7",
+      "when": 1791522415279,
+      "tag": "0007_banners_reviews_addresses_credit",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "7",
+      "when": 1791524024996,
+      "tag": "0008_owner_manage_staff",
+      "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "7",
+      "when": 1791524983150,
+      "tag": "0009_product_description_blocks",
+      "breakpoints": true
+    },
+    {
+      "idx": 10,
+      "version": "7",
+      "when": 1791527863778,
+      "tag": "0010_wholesale_and_payment_confirm",
+      "breakpoints": true
+    },
+    {
+      "idx": 11,
+      "version": "7",
+      "when": 1791528280259,
+      "tag": "0011_wholesale_info_and_staff_orders",
+      "breakpoints": true
+    },
+    {
+      "idx": 12,
+      "version": "7",
+      "when": 1791532087563,
+      "tag": "0012_buyer_edit_order",
+      "breakpoints": true
+    },
+    {
+      "idx": 13,
+      "version": "7",
+      "when": 1791533390755,
+      "tag": "0013_promo_codes_and_sales",
+      "breakpoints": true
+    },
+    {
+      "idx": 14,
+      "version": "7",
+      "when": 1791552096560,
+      "tag": "0014_product_and_review_media",
+      "breakpoints": true
+    },
+    {
+      "idx": 15,
+      "version": "7",
+      "when": 1791552552472,
+      "tag": "0015_add_storefront_company_content",
+      "breakpoints": true
+    },
+    {
+      "idx": 16,
+      "version": "7",
+      "when": 1791619635043,
+      "tag": "0016_migration",
+      "breakpoints": true
+    },
+    {
+      "idx": 17,
+      "version": "7",
+      "when": 1791649540321,
+      "tag": "0017_admin_manage_categories",
+      "breakpoints": true
+    },
+    {
+      "idx": 18,
+      "version": "7",
+      "when": 1791650013700,
+      "tag": "0018_tighten_function_access",
+      "breakpoints": true
+    },
+    {
+      "idx": 19,
+      "version": "7",
+      "when": 1791650223430,
+      "tag": "0019_block_direct_order_inserts",
+      "breakpoints": true
+    },
+    {
+      "idx": 20,
+      "version": "7",
+      "when": 1791695349775,
+      "tag": "0020_guest_browse_and_favorites",
+      "breakpoints": true
+    },
+    {
+      "idx": 21,
+      "version": "7",
+      "when": 1791695848418,
+      "tag": "0021_scope_photo_reads",
+      "breakpoints": true
+    },
+    {
+      "idx": 22,
+      "version": "7",
+      "when": 1791789347288,
+      "tag": "0022_alerts_delivery_fee_backups",
+      "breakpoints": true
+    },
+    {
+      "idx": 23,
+      "version": "7",
+      "when": 1791790670558,
+      "tag": "0023_reports_section_order_read",
+      "breakpoints": true
+    },
+    {
+      "idx": 24,
+      "version": "7",
+      "when": 1791791209195,
+      "tag": "0024_stock_movements",
+      "breakpoints": true
+    },
+    {
+      "idx": 25,
+      "version": "7",
+      "when": 1791791278486,
+      "tag": "0025_suppliers_pos_purchase_orders",
+      "breakpoints": true
+    },
+    {
+      "idx": 26,
+      "version": "7",
+      "when": 1792133408512,
+      "tag": "0026_customer_quote_custom_requests",
+      "breakpoints": true
+    },
+    {
+      "idx": 27,
+      "version": "7",
+      "when": 1792205103011,
+      "tag": "0027_per_customer_credit_terms",
+      "breakpoints": true
+    }
+  ]
+}

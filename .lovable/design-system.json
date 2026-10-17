@@ -1,0 +1,787 @@
+{
+  "meta": {
+    "name": "Kind Code Library",
+    "package": "@ws-dmvcorb9by5c8t7ibzfl/b9083fdb-be9e-40fb-bf94-41ca6242ef09",
+    "version": "1.1.0",
+    "framework": "react",
+    "css_framework": "tailwind",
+    "starter_template": "custom_design_system",
+    "theme_files": [
+      "src/design-system/provisionkh/theme.css"
+    ],
+    "source_type": "local",
+    "source_manifest": {
+      "#enrichment": "510e6abf3088edcfbd1d4d3c25fb1577c611616657ba795e76c09738b6bcd9f8",
+      ".dsignore": "2c7d76468c15bc0f1499420154f01ae3",
+      ".gitignore": "6059213806e442947666752f3db6bfdc",
+      ".lovable/meta.yaml": "8794970d6049858cc148d2b86f7a2b22",
+      ".lovable/plan/starter-design-system-from-the-shared-references-2026-10-09.md": "b22da7349414086300b72345d611a1e7",
+      ".lovable/project.json": "926dbeac71f9ec5eae3351d39608c40e",
+      ".lovable/sources.yaml": "b2e4bc575bb4b44768dbf42ff3fbfac3",
+      ".lovable/system.md": "4a91a6328714159faac9763821c7d45f",
+      "AGENTS.md": "a6d958ec6857dfa8cb0b188afa07a8a1",
+      "README.md": "219e70a5f6d3bcf9e4254d88e2c14a1c",
+      "android/.gitignore": "3b32d4444aec69367c207fac5a7a7c21",
+      "android/app/.gitignore": "9b42dc175edf959773d592d02297bf8d",
+      "android/app/build.gradle": "2caac0973ede3b83eac33da0455ed515",
+      "android/app/proguard-rules.pro": "adf6f233b18261975991f1825834afc7",
+      "android/app/src/androidTest/java/com/getcapacitor/myapp/ExampleInstrumentedTest.java": "fbaf7cc870c663eb52dcf218531c439d",
+      "android/app/src/main/AndroidManifest.xml": "5b85518b2f82659dcb0ce0a81ed704fb",
+      "android/app/src/main/java/kh/provision/app/MainActivity.java": "848b515e8418d7304e2b2edaabe1d892",
+      "android/app/src/main/res/drawable-land-hdpi/splash.png": "f7a80786dd355bd39014e58027aa6e19",
+      "android/app/src/main/res/drawable-land-mdpi/splash.png": "acc976d4a36479233371a53021525c0c",
+      "android/app/src/main/res/drawable-land-xhdpi/splash.png": "b8c72969bc1f78aab71a76035360d4af",
+      "android/app/src/main/res/drawable-land-xxhdpi/splash.png": "f87e988387b07d843905f38b084929fb",
+      "android/app/src/main/res/drawable-land-xxxhdpi/splash.png": "055a69553b16b0bf5f72094a2e459fc7",
+      "android/app/src/main/res/drawable-port-hdpi/splash.png": "5eb10d16c81338abe8bbc033d49638a8",
+      "android/app/src/main/res/drawable-port-mdpi/splash.png": "d855a76a5070c8e6fcfd83a27549bdce",
+      "android/app/src/main/res/drawable-port-xhdpi/splash.png": "df100b2a36bdb98b711cca58941728de",
+      "android/app/src/main/res/drawable-port-xxhdpi/splash.png": "2c1b668364e815256f67b71dcdfa4d6e",
+      "android/app/src/main/res/drawable-port-xxxhdpi/splash.png": "b5b1b22b59abe686c1df0d74a423d034",
+      "android/app/src/main/res/drawable-v24/ic_launcher_foreground.xml": "53a6c064d1f26ae56bf3803c51c7af2e",
+      "android/app/src/main/res/drawable/ic_launcher_background.xml": "04116413bdb242080a5cb731e7c192e5",
+      "android/app/src/main/res/drawable/splash.png": "acc976d4a36479233371a53021525c0c",
+      "android/app/src/main/res/layout/activity_main.xml": "e90567494113cdcc5c7375afaa5c5c6a",
+      "android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml": "c2412069dd5f39d9b660d5f15d20c3fb",
+      "android/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml": "c2412069dd5f39d9b660d5f15d20c3fb",
+      "android/app/src/main/res/mipmap-hdpi/ic_launcher.png": "1956941339dd5fe36d5c66601c89a08d",
+      "android/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png": "73b1e06d769fa08a9c3b8328cc15fd75",
+      "android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png": "f43e5674865a00186dd76183cf1f2f8e",
+      "android/app/src/main/res/mipmap-mdpi/ic_launcher.png": "7ed1b3739b83215d0c4a0b4a7f2dcab4",
+      "android/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png": "5b77e8aec8b17eed320a97567c7cb8bf",
+      "android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png": "a49547a32c7d9b529af607b033811d81",
+      "android/app/src/main/res/mipmap-xhdpi/ic_launcher.png": "5689511ee4e41a367d0342f37ac48bdf",
+      "android/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png": "15cdded29b9877ac98c5931024c5da5d",
+      "android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png": "c890fa4af62a63486d5dea62441ce7ab",
+      "android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png": "a3285eeaedda8201f04e7737b9df8421",
+      "android/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png": "4e9584ecc16d1fc75afb798688ce576f",
+      "android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png": "14cde87848553e24d7106f56eb8ceb6f",
+      "android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png": "9e029293ab1ae8e3a6a7b7d0b7177e46",
+      "android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png": "ed3696b7c52d9747411a475dbe3fa34a",
+      "android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png": "85addb4159ecd3f76f02fbacd5ec86de",
+      "android/app/src/main/res/values/ic_launcher_background.xml": "5be7ddce2ded77e31bf239689008eb7b",
+      "android/app/src/main/res/values/strings.xml": "e3adda1220c3460997851a731f03e2cc",
+      "android/app/src/main/res/values/styles.xml": "27f54b0c2231b4b9111b295e52c7c26f",
+      "android/app/src/main/res/xml/file_paths.xml": "7d26940811a3a4901e3ae59629b36242",
+      "android/app/src/test/java/com/getcapacitor/myapp/ExampleUnitTest.java": "e91b4501c14da821682fa5c26a16d616",
+      "android/build.gradle": "682315a426653617c6a74fc12bef55b6",
+      "android/gradle.properties": "f98c2b8e37a22f1c24b47bea9c90fed1",
+      "android/gradle/wrapper/gradle-wrapper.jar": "15a2cd45cb049056c465b481d6eabb3c",
+      "android/gradle/wrapper/gradle-wrapper.properties": "b36518772e2fbdd2ea85192b1d327884",
+      "android/gradlew": "794669d78aef1dd5c7d889ef618b311a",
+      "android/gradlew.bat": "7dd1a1fde1043efef3d624e3cb720522",
+      "android/settings.gradle": "f6cd925b3f859e23c3d819fe2459e0e4",
+      "android/variables.gradle": "4b3fce8ea2a515a9d2e47e74757172ec",
+      "bunfig.toml": "25f4c8696b22b0943db7191e0cdf7942",
+      "capacitor.config.ts": "8f330553e36bccb7f20557d885484710",
+      "components.json": "30d3d035361ce807021f5c54620962e9",
+      "drizzle.config.ts": "c2b6029fa56b49433380b7263b06e3f7",
+      "drizzle/migrations/0000_create_provisionkh_commerce.sql": "7390b4442d526f099ecd2546a0a04e7b",
+      "drizzle/migrations/0001_add_checkout_and_storage_policies.sql": "4572a7c19a215dc6945fdd9be196ec40",
+      "drizzle/migrations/0002_add_live_payment_tracking.sql": "82d43f269c1ea0500f7952d53eebb81e",
+      "drizzle/migrations/0003_disable_payment_simulation.sql": "f5f37435d903c3e6d6f5e529713fab95",
+      "drizzle/migrations/meta/0000_snapshot.json": "faf93b4872c73abeb9b0529a51f97498",
+      "drizzle/migrations/meta/0001_snapshot.json": "51f5ca458ed04a05ebc340399dccdb1a",
+      "drizzle/migrations/meta/0002_snapshot.json": "bad7d64e2c41c699094f603192d106c1",
+      "drizzle/migrations/meta/0003_snapshot.json": "e7c5a676dd72cbe99e4f35ff12f47864",
+      "drizzle/migrations/meta/_journal.json": "e1aa8c8b9d8dae285e123a34be6ae8a5",
+      "drizzle/schema.ts": "a60267d05d7dd11572f02686241f37c6",
+      "eslint.config.js": "07a67437fb1a45ab36d6de0145ff09de",
+      "ios/.gitignore": "69c89789e7f8884ad5562bc7d3b0dde7",
+      "ios/App/App.xcodeproj/project.pbxproj": "e0e98f9a2bc399333c21016f3a145904",
+      "ios/App/App.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist": "117105d2f2ee718eb485a07574a219b6",
+      "ios/App/App/AppDelegate.swift": "66cf80b6a9ef034e815c7d0135b97e36",
+      "ios/App/App/Assets.xcassets/AppIcon.appiconset/AppIcon-512@2x.png": "0ac741c9e1701ee14dd05ea131f7cfd8",
+      "ios/App/App/Assets.xcassets/AppIcon.appiconset/Contents.json": "7453c3002126811a57c38b2740f990cf",
+      "ios/App/App/Assets.xcassets/Contents.json": "31cc68f34934a99c0b0c1bebde56309c",
+      "ios/App/App/Assets.xcassets/Splash.imageset/Contents.json": "1162e1cddd7ea769bcacdd1aa7b4ac72",
+      "ios/App/App/Assets.xcassets/Splash.imageset/splash-2732x2732-1.png": "958532b95c3e7d4997327dc977b80600",
+      "ios/App/App/Assets.xcassets/Splash.imageset/splash-2732x2732-2.png": "958532b95c3e7d4997327dc977b80600",
+      "ios/App/App/Assets.xcassets/Splash.imageset/splash-2732x2732.png": "958532b95c3e7d4997327dc977b80600",
+      "ios/App/App/Base.lproj/LaunchScreen.storyboard": "5d11af4a0b01a8b581983f257b20d8ee",
+      "ios/App/App/Base.lproj/Main.storyboard": "6c57c4610eefae7a0c82635a2b17251a",
+      "ios/App/App/Info.plist": "71a04e9903be39e75e6a48498de75f60",
+      "ios/App/App/SceneDelegate.swift": "109aded755e8064cd0c2de99e039aeb5",
+      "ios/App/CapApp-SPM/.gitignore": "6feaa4e5eec39ee11bc38d770ab78999",
+      "ios/App/CapApp-SPM/Package.swift": "6c4376651c9b5432bb8247fcd5c47870",
+      "ios/App/CapApp-SPM/README.md": "d256f6b5922d4249607779141357d565",
+      "ios/App/CapApp-SPM/Sources/CapApp-SPM/CapApp-SPM.swift": "0d92cb44a62bc3f2d73464a2e4f9a890",
+      "ios/debug.xcconfig": "2dec6c90d02c4a57336888fdc2708716",
+      "lovable.toml": "956f55f44ff7952457c73fd1122d6bcd",
+      "mockupPreviewPlugin.ts": "70d01fe16b7ca25f16ff6bdb97f08b0b",
+      "package.json": "9a3719270bb87a9839f6915457ea4321",
+      "public/app-icon-192.png": "7dd7bb7098000aa460ebc796a8063b7a",
+      "public/app-icon-512.png": "e427376501ca23ccb0cf89a724aa8b99",
+      "public/favicon.png": "feff1d382d0738f1df38e769c2d30180",
+      "public/manifest.webmanifest": "bcc90479e12d4a4abf80dcae2af62dde",
+      "roadmap.md": "f161e1872c8a2947e7a010d55e9b6905",
+      "src/app/AdminListPage.tsx": "37e72e0c1bc824af00a30309f9ae6c0b",
+      "src/app/AdminShell.tsx": "c4ba2d1e5be26c704af39ea745fd96ee",
+      "src/app/StoreShell.tsx": "282b0384ba2f0b5e2a6ba626189f7aa3",
+      "src/app/store-context.tsx": "68bd22fca31fcc9d924c3e80380f925f",
+      "src/assets/logos/provisionkh-app-icon.png": "d4f9add843f6587ee829da2e46942b7f",
+      "src/assets/photography/provisionkh-warehouse.jpg": "ef57367f59f2ea47f4358e9da41a7444",
+      "src/design-system/provisionkh/components/Avatar.tsx": "4cdaba9cb7b5243f8e9f60e9f7bdd649",
+      "src/design-system/provisionkh/components/Badge.tsx": "90c0dd3e57026937143fbd91798ab74f",
+      "src/design-system/provisionkh/components/Button.tsx": "7b8fa9636044d83939ea155f5230b3fc",
+      "src/design-system/provisionkh/components/Card.tsx": "ad55f79eaffb94d2f2eb05657a421872",
+      "src/design-system/provisionkh/components/IconButton.tsx": "ae4a0176193ad0f2fd284b9244300925",
+      "src/design-system/provisionkh/components/Input.tsx": "a41b95d3ddbaa1e73c022e5cd5fce750",
+      "src/design-system/provisionkh/components/ListItem.tsx": "8ddfd0cbaeaa2ee588e6dc62a123ddeb",
+      "src/design-system/provisionkh/components/Navigation.tsx": "93b8c689f3706732eb010cae34d259c6",
+      "src/design-system/provisionkh/components/ProgressSteps.tsx": "1133d5c5b79019258a13c57709459948",
+      "src/design-system/provisionkh/components/Tabs.tsx": "bdb8244f2e49da751a26dcef0da32f6d",
+      "src/design-system/provisionkh/index.ts": "9b800aa8076bddd6939fde3bde6eaad2",
+      "src/design-system/provisionkh/theme.css": "a9f97e76b978a20cab3c9598c263c520",
+      "src/design-system/provisionkh/utils.ts": "5db954dfcf3dd9020b007a83f74b4251",
+      "src/index.ts": "bffa111d524d8a258b7084e0f5cce275",
+      "src/integrations/lovable/index.ts": "e9cf6e6968dd0392b2222ee0745ecece",
+      "src/integrations/supabase/auth-attacher.ts": "dad043cda134d909e52de0346c16625e",
+      "src/integrations/supabase/auth-middleware.ts": "eabaf8c8ba32205717921ce5f255185e",
+      "src/integrations/supabase/client.server.ts": "23f838ab7633e0a97e695f3c500d91aa",
+      "src/integrations/supabase/client.ts": "2e72a87ed578e0084537f2646f2d7e6a",
+      "src/integrations/supabase/cron-auth.ts": "6c04781ff98ada5977945fae55d39385",
+      "src/integrations/supabase/previewAuthStorage.ts": "0a2d63e049bc63135b19c8e21cc0b1aa",
+      "src/integrations/supabase/types.ts": "392ff93ec4600b8173b309152347ae06",
+      "src/lib/payment.functions.ts": "4332362639f64bc36e8fc04a17d1b360",
+      "src/lib/utils.ts": "d9837f38cc05303254571985e3164050",
+      "src/mockup-preview.d.ts": "ae9d81e2b8514e13fd59b5b6bece9a64",
+      "src/routeTree.gen.ts": "ee3cd3c27ea9b7609924dc77566a0386",
+      "src/router.tsx": "8f905e713b0eba7fa8148b7995a708c9",
+      "src/routes/[__component].preview.$.tsx": "e4bf310e591541d31abf0cfeeb1121a4",
+      "src/routes/[__mockup].preview.$.tsx": "5d9f42470848aa60148f20f9580e240e",
+      "src/routes/__root.tsx": "da28d5ded404faed97484a13d96fdaa6",
+      "src/routes/_authenticated/admin/customers.tsx": "8fbac7e19f9cbdc578ec86e2d68c7297",
+      "src/routes/_authenticated/admin/drops.tsx": "75248bf58e3dc5bfc9c9459289351002",
+      "src/routes/_authenticated/admin/index.tsx": "3831e682a158c011f067e686fb87637b",
+      "src/routes/_authenticated/admin/orders.tsx": "b619d93afcc3e0e8d8e0ab39881cf57d",
+      "src/routes/_authenticated/admin/products.tsx": "55a9b7bce45de81f123f5f225016428a",
+      "src/routes/_authenticated/admin/receivables.tsx": "500f63fa5efe2f2dcd7dc969ce48e930",
+      "src/routes/_authenticated/admin/route.tsx": "811edf71d4462e090a5fdb9c0577d29f",
+      "src/routes/_authenticated/admin/settings.tsx": "348d6f3053f74b0a1196fef0a57a5834",
+      "src/routes/_authenticated/admin/staff.tsx": "0fa095e6677f987e938275030e3daf3c",
+      "src/routes/_authenticated/route.tsx": "12fb9736201686910232c9f35c38100f",
+      "src/routes/_authenticated/store/cart.tsx": "d352a0b61cfb42c6364809da7857e73c",
+      "src/routes/_authenticated/store/index.tsx": "f4c6aae47456de0a4320d348b3825f82",
+      "src/routes/_authenticated/store/orders.tsx": "b571c9a6a87c26026509d11b68602c6a",
+      "src/routes/_authenticated/store/profile.tsx": "2b751dafb64dcb62d040621395de6124",
+      "src/routes/_authenticated/store/route.tsx": "8cc582f750e8b27cf549ab5971a4ceb4",
+      "src/routes/api/public/payment-webhook.ts": "397f74216f62a2de39c5318ab912ab79",
+      "src/routes/auth.tsx": "84e8bba738a394c13c54e0e39eb8f62b",
+      "src/routes/index.tsx": "4cc3a5c8b8412d7757fad5a0a48712e6",
+      "src/start.ts": "ceb1c6cb0c990574d05228b0bfaa55e1",
+      "src/styles.css": "3437f2c40cbfdfc5657610f6cd773945",
+      "supabase/config.toml": "d107ddce41407ea4cce7de0cccad356f",
+      "tsconfig.json": "5498ac94bab14bcff2c29aca84eba5b1",
+      "vite.config.ts": "2ad56ddcf2cf63319567ae6ffa363866",
+      "wrangler.jsonc": "680b897d48e44bcc65fe437c29b38f3b"
+    },
+    "pipeline_version": 8
+  },
+  "tokens": {
+    "color": [
+      {
+        "name": "--pk-background",
+        "raw": "oklch(0.982 0.004 70)",
+        "source": "src/design-system/provisionkh/theme.css"
+      },
+      {
+        "name": "--pk-foreground",
+        "raw": "oklch(0.205 0.012 265)",
+        "source": "src/design-system/provisionkh/theme.css"
+      },
+      {
+        "name": "--pk-surface",
+        "raw": "oklch(1 0 0)",
+        "source": "src/design-system/provisionkh/theme.css"
+      },
+      {
+        "name": "--pk-surface-raised",
+        "raw": "oklch(1 0 0)",
+        "source": "src/design-system/provisionkh/theme.css"
+      },
+      {
+        "name": "--pk-muted",
+        "raw": "oklch(0.965 0.005 264)",
+        "source": "src/design-system/provisionkh/theme.css"
+      },
+      {
+        "name": "--pk-muted-foreground",
+        "raw": "oklch(0.52 0.018 264)",
+        "source": "src/design-system/provisionkh/theme.css"
+      },
+      {
+        "name": "--pk-primary",
+        "raw": "oklch(0.705 0.213 47.6)",
+        "source": "src/design-system/provisionkh/theme.css"
+      },
+      {
+        "name": "--pk-primary-hover",
+        "raw": "oklch(0.646 0.222 41.1)",
+        "source": "src/design-system/provisionkh/theme.css"
+      },
+      {
+        "name": "--pk-primary-foreground",
+        "raw": "oklch(1 0 0)",
+        "source": "src/design-system/provisionkh/theme.css"
+      },
+      {
+        "name": "--pk-secondary",
+        "raw": "oklch(0.95 0.027 67)",
+        "source": "src/design-system/provisionkh/theme.css"
+      },
+      {
+        "name": "--pk-secondary-foreground",
+        "raw": "oklch(0.49 0.16 40)",
+        "source": "src/design-system/provisionkh/theme.css"
+      },
+      {
+        "name": "--pk-success",
+        "raw": "oklch(0.627 0.194 149.2)",
+        "source": "src/design-system/provisionkh/theme.css"
+      },
+      {
+        "name": "--pk-success-subtle",
+        "raw": "oklch(0.962 0.044 156.7)",
+        "source": "src/design-system/provisionkh/theme.css"
+      },
+      {
+        "name": "--pk-warning",
+        "raw": "oklch(0.666 0.179 58.3)",
+        "source": "src/design-system/provisionkh/theme.css"
+      },
+      {
+        "name": "--pk-warning-subtle",
+        "raw": "oklch(0.962 0.059 95.6)",
+        "source": "src/design-system/provisionkh/theme.css"
+      },
+      {
+        "name": "--pk-destructive",
+        "raw": "oklch(0.577 0.245 27.3)",
+        "source": "src/design-system/provisionkh/theme.css"
+      },
+      {
+        "name": "--pk-destructive-subtle",
+        "raw": "oklch(0.971 0.013 17.4)",
+        "source": "src/design-system/provisionkh/theme.css"
+      },
+      {
+        "name": "--pk-info",
+        "raw": "oklch(0.588 0.158 242)",
+        "source": "src/design-system/provisionkh/theme.css"
+      },
+      {
+        "name": "--pk-border",
+        "raw": "oklch(0.91 0.009 264)",
+        "source": "src/design-system/provisionkh/theme.css"
+      },
+      {
+        "name": "--pk-input",
+        "raw": "oklch(0.88 0.012 264)",
+        "source": "src/design-system/provisionkh/theme.css"
+      },
+      {
+        "name": "--pk-ring",
+        "raw": "oklch(0.705 0.213 47.6)",
+        "source": "src/design-system/provisionkh/theme.css"
+      },
+      {
+        "name": "--pk-chart-1",
+        "raw": "oklch(0.705 0.213 47.6)",
+        "source": "src/design-system/provisionkh/theme.css"
+      },
+      {
+        "name": "--pk-chart-2",
+        "raw": "oklch(0.627 0.194 149.2)",
+        "source": "src/design-system/provisionkh/theme.css"
+      },
+      {
+        "name": "--pk-chart-3",
+        "raw": "oklch(0.588 0.158 242)",
+        "source": "src/design-system/provisionkh/theme.css"
+      },
+      {
+        "name": "--pk-chart-4",
+        "raw": "oklch(0.666 0.179 58.3)",
+        "source": "src/design-system/provisionkh/theme.css"
+      }
+    ],
+    "typography": [
+      {
+        "name": "--font-sans",
+        "raw": "\"Inter\", \"Noto Sans Khmer\", ui-sans-serif, system-ui, sans-serif",
+        "source": "src/design-system/provisionkh/theme.css"
+      },
+      {
+        "name": "--font-khmer",
+        "raw": "\"Noto Sans Khmer\", \"Inter\", sans-serif",
+        "source": "src/design-system/provisionkh/theme.css"
+      }
+    ],
+    "radius": [
+      {
+        "name": "--radius-control",
+        "raw": "0.375rem",
+        "source": "src/design-system/provisionkh/theme.css"
+      },
+      {
+        "name": "--radius-panel",
+        "raw": "0.5rem",
+        "source": "src/design-system/provisionkh/theme.css"
+      }
+    ],
+    "shadow": [
+      {
+        "name": "--shadow-panel",
+        "raw": "0 1px 2px 0 rgb(15 23 42 / 0.04), 0 8px 24px -16px rgb(15 23 42 / 0.16)",
+        "source": "src/design-system/provisionkh/theme.css"
+      },
+      {
+        "name": "--shadow-overlay",
+        "raw": "0 18px 48px -20px rgb(15 23 42 / 0.24)",
+        "source": "src/design-system/provisionkh/theme.css"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Avatar",
+      "file": "src/design-system/provisionkh/components/Avatar.tsx",
+      "import_path": "",
+      "props": [
+        {
+          "name": "src",
+          "type": "string"
+        },
+        {
+          "name": "alt",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "fallback",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ],
+          "default": "md"
+        }
+      ]
+    },
+    {
+      "name": "Badge",
+      "file": "src/design-system/provisionkh/components/Badge.tsx",
+      "import_path": "",
+      "props": [
+        {
+          "name": "variant",
+          "type": "enum",
+          "values": [
+            "neutral",
+            "primary",
+            "success",
+            "warning",
+            "destructive",
+            "info"
+          ],
+          "default": "neutral"
+        }
+      ]
+    },
+    {
+      "name": "StatusIndicator",
+      "file": "src/design-system/provisionkh/components/Badge.tsx",
+      "import_path": "",
+      "props": [
+        {
+          "name": "pulse",
+          "type": "boolean"
+        }
+      ]
+    },
+    {
+      "name": "Button",
+      "file": "src/design-system/provisionkh/components/Button.tsx",
+      "import_path": "",
+      "props": [
+        {
+          "name": "variant",
+          "type": "enum",
+          "values": [
+            "primary",
+            "secondary",
+            "outline",
+            "ghost",
+            "destructive"
+          ],
+          "default": "primary"
+        },
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg",
+            "icon"
+          ],
+          "default": "md"
+        },
+        {
+          "name": "asChild",
+          "type": "boolean",
+          "default": "false"
+        }
+      ]
+    },
+    {
+      "name": "Card",
+      "file": "src/design-system/provisionkh/components/Card.tsx",
+      "import_path": "",
+      "props": [
+        {
+          "name": "elevated",
+          "type": "boolean"
+        }
+      ]
+    },
+    {
+      "name": "CardHeader",
+      "file": "src/design-system/provisionkh/components/Card.tsx",
+      "import_path": ""
+    },
+    {
+      "name": "CardContent",
+      "file": "src/design-system/provisionkh/components/Card.tsx",
+      "import_path": ""
+    },
+    {
+      "name": "StatCard",
+      "file": "src/design-system/provisionkh/components/Card.tsx",
+      "import_path": "",
+      "props": [
+        {
+          "name": "label",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "delta",
+          "type": "string"
+        },
+        {
+          "name": "trend",
+          "type": "enum",
+          "values": [
+            "up",
+            "down",
+            "flat"
+          ],
+          "default": "flat"
+        },
+        {
+          "name": "icon",
+          "type": "any"
+        },
+        {
+          "name": "detail",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "IconButton",
+      "file": "src/design-system/provisionkh/components/IconButton.tsx",
+      "import_path": "",
+      "props": [
+        {
+          "name": "label",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "variant",
+          "type": "any",
+          "default": "ghost"
+        },
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md"
+          ],
+          "default": "md"
+        }
+      ]
+    },
+    {
+      "name": "Input",
+      "file": "src/design-system/provisionkh/components/Input.tsx",
+      "import_path": "",
+      "props": [
+        {
+          "name": "invalid",
+          "type": "boolean"
+        }
+      ]
+    },
+    {
+      "name": "SearchInput",
+      "file": "src/design-system/provisionkh/components/Input.tsx",
+      "import_path": "",
+      "props": [
+        {
+          "name": "containerClassName",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "Select",
+      "file": "src/design-system/provisionkh/components/Input.tsx",
+      "import_path": ""
+    },
+    {
+      "name": "Field",
+      "file": "src/design-system/provisionkh/components/Input.tsx",
+      "import_path": "",
+      "props": [
+        {
+          "name": "label",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "hint",
+          "type": "string"
+        },
+        {
+          "name": "error",
+          "type": "string"
+        },
+        {
+          "name": "required",
+          "type": "boolean"
+        },
+        {
+          "name": "children",
+          "type": "any",
+          "required": true
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "default": "absolute left-3 top-1/2 size-4 -translate-y-1/2 text-muted-foreground"
+        }
+      ]
+    },
+    {
+      "name": "ListItem",
+      "file": "src/design-system/provisionkh/components/ListItem.tsx",
+      "import_path": "",
+      "props": [
+        {
+          "name": "leading",
+          "type": "any"
+        },
+        {
+          "name": "title",
+          "type": "any",
+          "required": true
+        },
+        {
+          "name": "description",
+          "type": "any"
+        },
+        {
+          "name": "meta",
+          "type": "any"
+        },
+        {
+          "name": "trailing",
+          "type": "any"
+        }
+      ]
+    },
+    {
+      "name": "NavItem",
+      "file": "src/design-system/provisionkh/components/Navigation.tsx",
+      "import_path": "",
+      "props": [
+        {
+          "name": "icon",
+          "type": "any"
+        },
+        {
+          "name": "active",
+          "type": "boolean"
+        },
+        {
+          "name": "badge",
+          "type": "any"
+        }
+      ]
+    },
+    {
+      "name": "BottomNavigation",
+      "file": "src/design-system/provisionkh/components/Navigation.tsx",
+      "import_path": "",
+      "props": [
+        {
+          "name": "items",
+          "type": "any",
+          "required": true
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "onValueChange",
+          "type": "function"
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "default": "shrink-0"
+        }
+      ]
+    },
+    {
+      "name": "Sidebar",
+      "file": "src/design-system/provisionkh/components/Navigation.tsx",
+      "import_path": "",
+      "props": [
+        {
+          "name": "brand",
+          "type": "any"
+        },
+        {
+          "name": "children",
+          "type": "any",
+          "required": true
+        },
+        {
+          "name": "footer",
+          "type": "any"
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "default": "shrink-0"
+        }
+      ]
+    },
+    {
+      "name": "NavAction",
+      "file": "src/design-system/provisionkh/components/Navigation.tsx",
+      "import_path": "",
+      "props": [
+        {
+          "name": "icon",
+          "type": "any",
+          "required": true
+        },
+        {
+          "name": "active",
+          "type": "boolean"
+        }
+      ]
+    },
+    {
+      "name": "ProgressSteps",
+      "file": "src/design-system/provisionkh/components/ProgressSteps.tsx",
+      "import_path": "",
+      "props": [
+        {
+          "name": "steps",
+          "type": "any",
+          "required": true
+        },
+        {
+          "name": "current",
+          "type": "number",
+          "required": true
+        },
+        {
+          "name": "orientation",
+          "type": "enum",
+          "values": [
+            "horizontal",
+            "vertical"
+          ],
+          "default": "horizontal"
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "default": "size-3.5"
+        }
+      ]
+    },
+    {
+      "name": "Tabs",
+      "file": "src/design-system/provisionkh/components/Tabs.tsx",
+      "import_path": "",
+      "props": [
+        {
+          "name": "items",
+          "type": "any",
+          "required": true
+        },
+        {
+          "name": "value",
+          "type": "string"
+        },
+        {
+          "name": "defaultValue",
+          "type": "string"
+        },
+        {
+          "name": "onValueChange",
+          "type": "function"
+        },
+        {
+          "name": "variant",
+          "type": "enum",
+          "values": [
+            "underline",
+            "pills"
+          ],
+          "default": "underline"
+        }
+      ]
+    },
+    {
+      "name": "SegmentedControl",
+      "file": "src/design-system/provisionkh/components/Tabs.tsx",
+      "import_path": ""
+    }
+  ],
+  "assets": [
+    {
+      "file": "src/assets/logos/provisionkh-app-icon.png",
+      "kind": "logo",
+      "format": "png"
+    },
+    {
+      "file": "src/assets/photography/provisionkh-warehouse.jpg",
+      "kind": "photography",
+      "format": "jpg"
+    }
+  ]
+}
