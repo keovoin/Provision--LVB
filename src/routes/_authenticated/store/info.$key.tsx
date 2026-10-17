@@ -36,6 +36,8 @@ export const Route = createFileRoute("/_authenticated/store/info/$key")({
         { name: "description", content: page?.en ?? "Store information" },
         { property: "og:title", content: `${page?.en ?? "Info"} — ProvisionKH` },
         { property: "og:description", content: page?.en ?? "Store information" },
+        { property: "og:type", content: "website" },
+        { name: "twitter:card", content: "summary" },
       ],
     };
   },
