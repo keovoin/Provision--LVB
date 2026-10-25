@@ -6,7 +6,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { PageHead, SkeletonRows, toast } from "@/app/admin-ui";
 
 export const Route = createFileRoute("/_authenticated/admin/categories")({
-  head: () => ({ meta: [{ title: "ក្រុមទំនិញ | ProvisionKH Ops" }, { name: "description", content: "Manage ProvisionKH product categories." }, { property: "og:title", content: "ProvisionKH Categories" }, { property: "og:description", content: "Product category management." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }),
+  head: () => ({ meta: [{ title: "ក្រុមទំនិញ | SastraKH Ops" }, { name: "description", content: "Manage SastraKH product categories." }, { property: "og:title", content: "SastraKH Categories" }, { property: "og:description", content: "Product category management." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }),
   component: CategoriesPage,
 });
 
