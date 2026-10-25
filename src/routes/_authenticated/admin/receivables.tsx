@@ -5,7 +5,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { METHOD_KM, PageHead, SkeletonRows, StatusBadge, Tabs, day, usd , toast } from "@/app/admin-ui";
 
 export const Route = createFileRoute("/_authenticated/admin/receivables")({
-  head: () => ({ meta: [{ title: "ប្រាក់ត្រូវទទួល | ProvisionKH Ops" }, { name: "description", content: "Track unpaid and overdue ProvisionKH invoices." }, { property: "og:title", content: "ProvisionKH Receivables" }, { property: "og:description", content: "Unpaid and overdue invoices." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }),
+  head: () => ({ meta: [{ title: "ប្រាក់ត្រូវទទួល | SastraKH Ops" }, { name: "description", content: "Track unpaid and overdue SastraKH invoices." }, { property: "og:title", content: "SastraKH Receivables" }, { property: "og:description", content: "Unpaid and overdue invoices." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }),
   component: ReceivablesPage,
 });
 
