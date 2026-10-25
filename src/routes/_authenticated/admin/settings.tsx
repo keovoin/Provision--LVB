@@ -52,7 +52,7 @@ function AlertsCard() {
 }
 
 export const Route = createFileRoute("/_authenticated/admin/settings")({
-  head: () => ({ meta: [{ title: "ការកំណត់ | ProvisionKH Ops" }, { name: "description", content: "ProvisionKH store settings." }, { property: "og:title", content: "ProvisionKH Settings" }, { property: "og:description", content: "Exchange rate and store settings." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }),
+  head: () => ({ meta: [{ title: "ការកំណត់ | SastraKH Ops" }, { name: "description", content: "SastraKH store settings." }, { property: "og:title", content: "SastraKH Settings" }, { property: "og:description", content: "Exchange rate and store settings." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }),
   component: SettingsPage,
 });
 
