@@ -1,8 +1,8 @@
-# ProvisionKH
+# SastraKH
 
 **Wholesale grocery ordering, built for Cambodia.**
 
-ProvisionKH is a complete commerce platform that connects wholesale suppliers with shops and restaurants across Cambodia. Customers browse a Khmer-first mobile storefront, order in a few taps, and pay by KHQR — while your team runs the entire operation from one admin portal.
+SastraKH is a complete commerce platform that connects wholesale suppliers with shops and restaurants across Cambodia. Customers browse a Khmer-first mobile storefront, order in a few taps, and pay by KHQR — while your team runs the entire operation from one admin portal.
 
 ## What you get
 
