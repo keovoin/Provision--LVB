@@ -10,7 +10,7 @@ import { ProductCard } from "@/app/ProductCard";
 import { usePrefs } from "@/app/prefs";
 import { StoreFooter } from "@/app/StoreFooter";
 export const Route = createFileRoute("/_authenticated/store/")({
-  head: () => ({ meta: [{ title: "ហាងលក់ដុំ | ProvisionKH" }, { name: "description", content: "Browse ProvisionKH wholesale groceries with tiered pricing." }, { property: "og:title", content: "ProvisionKH Wholesale Store" }, { property: "og:description", content: "Wholesale groceries for Cambodian businesses." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }),
+  head: () => ({ meta: [{ title: "ហាងលក់ដុំ | SastraKH" }, { name: "description", content: "Browse SastraKH wholesale groceries with tiered pricing." }, { property: "og:title", content: "SastraKH Wholesale Store" }, { property: "og:description", content: "Wholesale groceries for Cambodian businesses." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }),
   loader: async ({ context }) => {
     const userId = await storeScope();
     void context.queryClient.prefetchQuery(bannerOptions(userId));
