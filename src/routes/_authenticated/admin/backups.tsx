@@ -6,7 +6,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { PageHead, SkeletonRows, toast } from "@/app/admin-ui";
 
 export const Route = createFileRoute("/_authenticated/admin/backups")({
-  head: () => ({ meta: [{ title: "ច្បាប់ចម្លងទិន្នន័យ | ProvisionKH Ops" }, { name: "description", content: "Daily ProvisionKH database backup copies." }, { property: "og:title", content: "ProvisionKH Backups" }, { property: "og:description", content: "Download database backup copies." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }),
+  head: () => ({ meta: [{ title: "ច្បាប់ចម្លងទិន្នន័យ | SastraKH Ops" }, { name: "description", content: "Daily SastraKH database backup copies." }, { property: "og:title", content: "SastraKH Backups" }, { property: "og:description", content: "Download database backup copies." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }),
   component: BackupsPage,
 });
 
