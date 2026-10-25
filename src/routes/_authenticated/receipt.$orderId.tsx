@@ -7,7 +7,7 @@ import { METHOD_KM, usd } from "@/app/admin-ui";
 import logo from "@/assets/logos/provisionkh-mark-square.png";
 
 export const Route = createFileRoute("/_authenticated/receipt/$orderId")({
-  head: () => ({ meta: [{ title: "វិក្កយបត្រ · Invoice | ProvisionKH" }, { name: "description", content: "Printable ProvisionKH invoice and payment receipt." }, { property: "og:title", content: "ProvisionKH Invoice" }, { property: "og:description", content: "Printable invoice and receipt." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }),
+  head: () => ({ meta: [{ title: "វិក្កយបត្រ · Invoice | SastraKH" }, { name: "description", content: "Printable SastraKH invoice and payment receipt." }, { property: "og:title", content: "SastraKH Invoice" }, { property: "og:description", content: "Printable invoice and receipt." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }),
   component: Receipt,
 });
 
@@ -35,7 +35,7 @@ function Receipt() {
     </div>
     <article className="mx-auto max-w-2xl bg-surface p-8 text-sm text-foreground shadow-sm print:max-w-none print:p-0 print:shadow-none">
       <header className="flex items-start justify-between gap-4 border-b border-border pb-5">
-        <div className="flex items-center gap-3"><img src={logo} alt="ProvisionKH" className="size-12 rounded-control" /><div><p className="text-lg font-bold">ProvisionKH</p><p className="text-xs text-muted-foreground">ទំនិញលក់ដុំ · Wholesale supply</p></div></div>
+        <div className="flex items-center gap-3"><img src={logo} alt="SastraKH" className="size-12 rounded-control" /><div><p className="text-lg font-bold">SastraKH</p><p className="text-xs text-muted-foreground">ទំនិញលក់ដុំ · Wholesale supply</p></div></div>
         <div className="text-right"><p className="text-xl font-bold">{paid ? "បង្កាន់ដៃ" : "វិក្កយបត្រ"}</p><p className="text-xs uppercase tracking-wide text-muted-foreground">{paid ? "Payment receipt" : "Invoice"}</p>
           <p className={`mt-1 inline-block rounded-full px-2 py-0.5 text-xs font-semibold ${cancelled ? "bg-destructive-subtle text-destructive" : paid ? "bg-success-subtle text-success" : "bg-warning-subtle text-warning"}`}>{cancelled ? "បោះបង់ · Cancelled" : paid ? "បានបង់ · Paid" : "មិនទាន់បង់ · Unpaid"}</p></div>
       </header>
