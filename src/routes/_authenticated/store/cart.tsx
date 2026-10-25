@@ -14,7 +14,7 @@ const MapPicker = lazy(() => import("@/app/MapPicker").then((m) => ({ default: m
 type Method = "cod" | "khqr" | "link" | "net30";
 interface Address { id: string; label: string; address: string; lat: number | null; lng: number | null }
 
-export const Route = createFileRoute("/_authenticated/store/cart")({ head: () => ({ meta: [{ title: "កន្ត្រក និងទូទាត់ | ProvisionKH" }, { name: "description", content: "Review wholesale items and securely place your ProvisionKH order." }, { property: "og:title", content: "ProvisionKH Checkout" }, { property: "og:description", content: "Secure wholesale checkout." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }), component: CartPage });
+export const Route = createFileRoute("/_authenticated/store/cart")({ head: () => ({ meta: [{ title: "កន្ត្រក និងទូទាត់ | SastraKH" }, { name: "description", content: "Review wholesale items and securely place your SastraKH order." }, { property: "og:title", content: "SastraKH Checkout" }, { property: "og:description", content: "Secure wholesale checkout." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }), component: CartPage });
 
 const methods: { id: Method; key: TKey; icon: typeof QrCode }[] = [
   { id: "cod", key: "cod", icon: Banknote }, { id: "khqr", key: "qr", icon: QrCode }, { id: "link", key: "link", icon: Link2 }, { id: "net30", key: "net30", icon: Wallet },
