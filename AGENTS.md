@@ -1,5 +1,7 @@
 # Project Architecture Rules
 
+- Keep display-brand changes separate from installed app IDs, authentication identities, service URLs and attachable design-system paths; renaming those identifiers can break existing accounts, integrations or consumers.
+
 - Keep quote/custom requests and offer transitions in authenticated database functions with row locks and a dedicated Requests permission; private attachment paths and user-scoped queries prevent cross-customer access and stale offer decisions.
 
 - Keep quantity-tier selection and savings calculations in the pure tier helpers, with product UI selecting tiers by quantity boundaries rather than matching prices; this keeps highlighting correct for equal-priced tiers and makes pricing behavior testable.
