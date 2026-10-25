@@ -6,7 +6,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { METHOD_KM, PageHead, SkeletonRows, StatusBadge, Tabs, day, usd , toast } from "@/app/admin-ui";
 
 export const Route = createFileRoute("/_authenticated/admin/orders")({
-  head: () => ({ meta: [{ title: "ការបញ្ជាទិញ | ProvisionKH Ops" }, { name: "description", content: "Manage ProvisionKH wholesale orders." }, { property: "og:title", content: "ProvisionKH Orders" }, { property: "og:description", content: "Wholesale order operations." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }),
+  head: () => ({ meta: [{ title: "ការបញ្ជាទិញ | SastraKH Ops" }, { name: "description", content: "Manage SastraKH wholesale orders." }, { property: "og:title", content: "SastraKH Orders" }, { property: "og:description", content: "Wholesale order operations." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }),
   component: OrdersPage,
 });
 
