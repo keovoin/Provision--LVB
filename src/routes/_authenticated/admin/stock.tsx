@@ -7,7 +7,7 @@ import { PageHead, inputCls, toast } from "@/app/admin-ui";
 import { ScanCamera } from "@/app/ScanCamera";
 
 export const Route = createFileRoute("/_authenticated/admin/stock")({
-  head: () => ({ meta: [{ title: "ស្កេនស្តុក | ProvisionKH Ops" }, { name: "description", content: "Scan or type product SKU to record stock in and out." }, { property: "og:title", content: "ProvisionKH Stock Scan" }, { property: "og:description", content: "Warehouse stock in/out scanning." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }),
+  head: () => ({ meta: [{ title: "ស្កេនស្តុក | SastraKH Ops" }, { name: "description", content: "Scan or type product SKU to record stock in and out." }, { property: "og:title", content: "SastraKH Stock Scan" }, { property: "og:description", content: "Warehouse stock in/out scanning." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }),
   component: StockScan,
 });
 
