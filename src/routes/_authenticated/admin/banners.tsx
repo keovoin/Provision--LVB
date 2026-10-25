@@ -9,7 +9,7 @@ import { PageHead, SkeletonRows, toast, uploadPhoto, usd } from "@/app/admin-ui"
 interface Stat { banner_id: string; title: string; clicks: number; unique_users: number; orders: number; completed: number; revenue: number }
 interface Banner { id: string; title_km: string; title_en: string; subtitle_km: string | null; subtitle_en: string | null; image_path: string | null; link_type: string; link_id: string; active: boolean; sort_order: number }
 interface Option { id: string; label: string }
-export const Route = createFileRoute("/_authenticated/admin/banners")({ head: () => ({ meta: [{ title: "បដាផ្សព្វផ្សាយ | ProvisionKH" }, { name: "description", content: "Manage home banners and see click-to-order performance." }, { property: "og:title", content: "ProvisionKH Banners" }, { property: "og:description", content: "Banner funnel analytics." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }), component: BannersPage });
+export const Route = createFileRoute("/_authenticated/admin/banners")({ head: () => ({ meta: [{ title: "បដាផ្សព្វផ្សាយ | SastraKH" }, { name: "description", content: "Manage home banners and see click-to-order performance." }, { property: "og:title", content: "SastraKH Banners" }, { property: "og:description", content: "Banner funnel analytics." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }), component: BannersPage });
 
 const pct = (a: number, b: number) => (b ? `${Math.round((a / b) * 100)}%` : "—");
 
