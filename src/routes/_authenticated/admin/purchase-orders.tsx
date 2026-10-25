@@ -6,7 +6,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { PageHead, inputCls, toast, usd } from "@/app/admin-ui";
 
 export const Route = createFileRoute("/_authenticated/admin/purchase-orders")({
-  head: () => ({ meta: [{ title: "ទិញចូល | ProvisionKH Ops" }, { name: "description", content: "Purchase orders from suppliers; receiving adds stock." }, { property: "og:title", content: "ProvisionKH Purchase Orders" }, { property: "og:description", content: "Supplier purchase orders and receiving." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }),
+  head: () => ({ meta: [{ title: "ទិញចូល | SastraKH Ops" }, { name: "description", content: "Purchase orders from suppliers; receiving adds stock." }, { property: "og:title", content: "SastraKH Purchase Orders" }, { property: "og:description", content: "Supplier purchase orders and receiving." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }),
   component: PurchaseOrders,
 });
 
