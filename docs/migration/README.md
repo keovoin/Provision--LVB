@@ -1,4 +1,4 @@
-# ProvisionKH — own-backend migration handover
+# SastraKH — own-backend migration handover
 
 Prepared 17 October 2026. **Preparation only: the running app is unchanged.**
 
