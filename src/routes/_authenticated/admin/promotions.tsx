@@ -6,7 +6,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { PageHead, SkeletonRows, inputCls, day, toast } from "@/app/admin-ui";
 
 export const Route = createFileRoute("/_authenticated/admin/promotions")({
-  head: () => ({ meta: [{ title: "បញ្ចុះតម្លៃ | ProvisionKH" }, { name: "description", content: "Manage ProvisionKH promo codes and timed sales." }, { property: "og:title", content: "ProvisionKH Promotions" }, { property: "og:description", content: "Promo codes and sales." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }),
+  head: () => ({ meta: [{ title: "បញ្ចុះតម្លៃ | SastraKH" }, { name: "description", content: "Manage SastraKH promo codes and timed sales." }, { property: "og:title", content: "SastraKH Promotions" }, { property: "og:description", content: "Promo codes and sales." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }),
   component: Promotions,
 });
 
