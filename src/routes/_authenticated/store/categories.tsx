@@ -9,7 +9,7 @@ import { priceInfo } from "@/app/catalog";
 import { usePrefs } from "@/app/prefs";
 
 export const Route = createFileRoute("/_authenticated/store/categories")({
-  head: () => ({ meta: [{ title: "ប្រភេទទំនិញ | ProvisionKH" }, { name: "description", content: "Browse ProvisionKH wholesale products by category." }, { property: "og:title", content: "ProvisionKH Product Categories" }, { property: "og:description", content: "Find wholesale groceries by category and compare quantity prices." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }),
+  head: () => ({ meta: [{ title: "ប្រភេទទំនិញ | SastraKH" }, { name: "description", content: "Browse SastraKH wholesale products by category." }, { property: "og:title", content: "SastraKH Product Categories" }, { property: "og:description", content: "Find wholesale groceries by category and compare quantity prices." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }),
   loader: async ({ context }) => {
     const userId = await storeScope();
     await context.queryClient.ensureQueryData(homeOptions(userId));
