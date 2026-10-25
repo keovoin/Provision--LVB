@@ -8,7 +8,7 @@ import { useFavorites } from "@/app/favorites";
 import { usePrefs } from "@/app/prefs";
 
 export const Route = createFileRoute("/_authenticated/store/favorites")({
-  head: () => ({ meta: [{ title: "ទំនិញដែលចូលចិត្ត | ProvisionKH" }, { name: "description", content: "Your saved ProvisionKH products for quick reordering." }, { property: "og:title", content: "ProvisionKH Favourites" }, { property: "og:description", content: "Saved wholesale products." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }),
+  head: () => ({ meta: [{ title: "ទំនិញដែលចូលចិត្ត | SastraKH" }, { name: "description", content: "Your saved SastraKH products for quick reordering." }, { property: "og:title", content: "SastraKH Favourites" }, { property: "og:description", content: "Saved wholesale products." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }),
   loader: async ({ context }) => {
     const userId = await storeScope();
     await context.queryClient.ensureQueryData(homeOptions(userId));
