@@ -5,7 +5,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { PageHead, SkeletonRows, inputCls, toast, usd } from "@/app/admin-ui";
 
 export const Route = createFileRoute("/_authenticated/admin/wholesale")({
-  head: () => ({ meta: [{ title: "លក់ដុំ | ProvisionKH Ops" }, { name: "description", content: "Set bulk pricing and minimum order totals." }, { property: "og:title", content: "ProvisionKH Wholesale Pricing" }, { property: "og:description", content: "Bulk pricing and minimum order settings." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }),
+  head: () => ({ meta: [{ title: "លក់ដុំ | SastraKH Ops" }, { name: "description", content: "Set bulk pricing and minimum order totals." }, { property: "og:title", content: "SastraKH Wholesale Pricing" }, { property: "og:description", content: "Bulk pricing and minimum order settings." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }),
   component: WholesalePage,
 });
 

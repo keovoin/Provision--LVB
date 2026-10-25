@@ -6,7 +6,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { PageHead, SkeletonRows, inputCls, toast } from "@/app/admin-ui";
 
 export const Route = createFileRoute("/_authenticated/admin/drops")({
-  head: () => ({ meta: [{ title: "ដឹកជញ្ជូនប្រចាំ | ProvisionKH Ops" }, { name: "description", content: "Schedule recurring ProvisionKH deliveries." }, { property: "og:title", content: "ProvisionKH Recurring Deliveries" }, { property: "og:description", content: "Recurring delivery schedules." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }),
+  head: () => ({ meta: [{ title: "ដឹកជញ្ជូនប្រចាំ | SastraKH Ops" }, { name: "description", content: "Schedule recurring SastraKH deliveries." }, { property: "og:title", content: "SastraKH Recurring Deliveries" }, { property: "og:description", content: "Recurring delivery schedules." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }),
   component: DropsPage,
 });
 

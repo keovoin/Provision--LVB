@@ -1,5 +1,10 @@
 # Roadmap
 
+## SastraKH rebrand
+- [x] Rename storefront, staff screens, page metadata, receipts, messages and native display names; retain existing identifiers and artwork
+- [x] Verify storefront and sign-in branding and installed app manifest
+- [ ] Verify GitHub synchronization — awaiting the connected repository's automatic sync
+
 ## Own-backend migration preparation
 - [x] Prepare source handover, configuration template, migration inventory, and cutover/rollback guide
 - [x] Inspect downloadable package for excluded secrets and generated/dependency files

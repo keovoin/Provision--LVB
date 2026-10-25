@@ -152,7 +152,7 @@ export const requestPhoneOtp = createServerFn({ method: "POST" })
       .single();
     if (insertError || !inserted) throw new Error("Could not start sign-in. Please try again.");
 
-    const sent = await sendSms(data.phone, `ProvisionKH verification code: ${code}. Valid for 5 minutes.`);
+    const sent = await sendSms(data.phone, `SastraKH verification code: ${code}. Valid for 5 minutes.`);
     if (!sent.ok) {
       // A code that never reached the phone must not count toward the resend limit.
       await supabaseAdmin.from("phone_verifications").delete().eq("id", inserted.id);

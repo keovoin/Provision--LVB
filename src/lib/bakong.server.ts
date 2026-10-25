@@ -4,7 +4,7 @@ export function bakongConfig() {
   const token = process.env["BAKONG_TOKEN"];
   const accountId = process.env["BAKONG_ACCOUNT_ID"];
   if (mode !== "bakong" || !token || !accountId) return null;
-  return { token, accountId, merchantName: process.env["BAKONG_MERCHANT_NAME"] || "ProvisionKH" };
+  return { token, accountId, merchantName: process.env["BAKONG_MERCHANT_NAME"] || "SastraKH" };
 }
 
 export type BakongTxn = { amount: number; currency: string; hash: string; toAccountId: string };

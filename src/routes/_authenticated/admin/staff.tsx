@@ -7,7 +7,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { PageHead, SkeletonRows, toast } from "@/app/admin-ui";
 
 export const Route = createFileRoute("/_authenticated/admin/staff")({
-  head: () => ({ meta: [{ title: "បុគ្គលិក | ProvisionKH Ops" }, { name: "description", content: "Manage ProvisionKH staff roles and access." }, { property: "og:title", content: "ProvisionKH Staff" }, { property: "og:description", content: "Staff roles and permissions." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }),
+  head: () => ({ meta: [{ title: "បុគ្គលិក | SastraKH Ops" }, { name: "description", content: "Manage SastraKH staff roles and access." }, { property: "og:title", content: "SastraKH Staff" }, { property: "og:description", content: "Staff roles and permissions." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }),
   component: StaffPage,
 });
 

@@ -22,8 +22,8 @@ function StoreFrame() {
     <header className="sticky top-0 z-30 border-b border-border bg-surface">
       <div className="mx-auto flex min-h-20 max-w-7xl items-center justify-between gap-3 px-4 sm:px-6 lg:px-8">
         <Link to="/store" className="flex min-w-0 items-center gap-2">
-          <img src={brandMark} alt="ProvisionKH" width={56} height={56} className="size-14 shrink-0 object-contain" />
-          <span className="min-w-0"><strong className="block font-sans text-base font-bold leading-tight sm:text-lg">ProvisionKH</strong><span className="mt-1 block text-xs text-muted-foreground">{t("tagline")}</span></span>
+          <img src={brandMark} alt="SastraKH" width={56} height={56} className="size-14 shrink-0 object-contain" />
+          <span className="min-w-0"><strong className="block font-sans text-base font-bold leading-tight sm:text-lg">SastraKH</strong><span className="mt-1 block text-xs text-muted-foreground">{t("tagline")}</span></span>
         </Link>
         <nav aria-label={t("home")} className="hidden items-center gap-1 md:flex">{links.filter(l => l.key !== "cart").map(({to, key, icon: Icon}) => <Button key={to} asChild variant={active(to) ? "secondary" : "ghost"}><Link to={to} aria-current={active(to) ? "page" : undefined}><Icon className="size-4" />{t(key)}</Link></Button>)}</nav>
         <div className="flex shrink-0 items-center gap-1 sm:gap-2">

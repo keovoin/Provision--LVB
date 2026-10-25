@@ -5,7 +5,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { PageHead, SkeletonRows, StatusBadge, Tabs, day, inputCls, usd , toast } from "@/app/admin-ui";
 
 export const Route = createFileRoute("/_authenticated/admin/customers")({
-  head: () => ({ meta: [{ title: "អតិថិជន | ProvisionKH Ops" }, { name: "description", content: "Manage ProvisionKH wholesale customers and credit." }, { property: "og:title", content: "ProvisionKH Customers" }, { property: "og:description", content: "Wholesale customer operations." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }),
+  head: () => ({ meta: [{ title: "អតិថិជន | SastraKH Ops" }, { name: "description", content: "Manage SastraKH wholesale customers and credit." }, { property: "og:title", content: "SastraKH Customers" }, { property: "og:description", content: "Wholesale customer operations." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }),
   component: CustomersPage,
 });
 

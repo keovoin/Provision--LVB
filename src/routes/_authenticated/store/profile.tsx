@@ -12,7 +12,7 @@ const DEFAULT_SUPPORT_URL = "https://t.me/ECOM2KH_BOT";
 
 interface Profile { name: string; business_name: string | null; phone: string; telegram: string | null; business_address: string | null; business_lat: number | null; business_lng: number | null; credit_limit_usd: number | null }
 interface CreditRequest { id: string; amount_usd: number; status: string; created_at: string }
-export const Route = createFileRoute("/_authenticated/store/profile")({ head: () => ({ meta: [{ title: "គណនី | ProvisionKH" }, { name: "description", content: "Manage your ProvisionKH wholesale customer profile." }, { property: "og:title", content: "ProvisionKH Profile" }, { property: "og:description", content: "Manage your customer profile." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }), component: ProfilePage });
+export const Route = createFileRoute("/_authenticated/store/profile")({ head: () => ({ meta: [{ title: "គណនី | SastraKH" }, { name: "description", content: "Manage your SastraKH wholesale customer profile." }, { property: "og:title", content: "SastraKH Profile" }, { property: "og:description", content: "Manage your customer profile." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }), component: ProfilePage });
 
 function ProfilePage() {
   const { t, lang, setLang, theme, setTheme } = usePrefs();

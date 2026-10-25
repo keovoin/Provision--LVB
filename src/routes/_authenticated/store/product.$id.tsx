@@ -22,11 +22,11 @@ export const Route = createFileRoute("/_authenticated/store/product/$id")({
   },
   head: ({ loaderData, params }) => {
     const p = loaderData?.meta;
-    const title = p ? `${p.km} · ${p.en} | ProvisionKH` : "ទំនិញ | ProvisionKH";
-    const desc = p ? `${p.en} (${p.km}) — wholesale ${p.unit} from ProvisionKH. Bulk quantity pricing and fast delivery in Cambodia.` : "Product details, quantity pricing, and customer reviews.";
+    const title = p ? `${p.km} · ${p.en} | SastraKH` : "ទំនិញ | SastraKH";
+    const desc = p ? `${p.en} (${p.km}) — wholesale ${p.unit} from SastraKH. Bulk quantity pricing and fast delivery in Cambodia.` : "Product details, quantity pricing, and customer reviews.";
     return {
       meta: [{ title }, { name: "description", content: desc }, { property: "og:title", content: title }, { property: "og:description", content: desc }, { property: "og:type", content: "product" }, { property: "og:url", content: `https://ecom-kh.lovable.app/store/product/${params.id}` }, { name: "twitter:card", content: "summary" }],
-      scripts: p ? [{ type: "application/ld+json", children: JSON.stringify({ "@context": "https://schema.org", "@type": "Product", name: p.en, alternateName: p.km, sku: p.sku, description: desc, brand: { "@type": "Brand", name: "ProvisionKH" } }) }] : [],
+      scripts: p ? [{ type: "application/ld+json", children: JSON.stringify({ "@context": "https://schema.org", "@type": "Product", name: p.en, alternateName: p.km, sku: p.sku, description: desc, brand: { "@type": "Brand", name: "SastraKH" } }) }] : [],
     };
   },
   errorComponent: ({ error }) => <p role="alert">{error instanceof Error ? error.message : "Unable to load this page"}</p>,

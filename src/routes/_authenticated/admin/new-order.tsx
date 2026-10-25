@@ -6,7 +6,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { METHOD_KM, PageHead, inputCls, toast, usd } from "@/app/admin-ui";
 
 export const Route = createFileRoute("/_authenticated/admin/new-order")({
-  head: () => ({ meta: [{ title: "បង្កើតការបញ្ជាទិញលក់ដុំ | ProvisionKH Ops" }, { name: "description", content: "Create a bulk order for a customer and send it to them." }, { property: "og:title", content: "ProvisionKH Bulk Order Form" }, { property: "og:description", content: "Staff-created wholesale orders." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }),
+  head: () => ({ meta: [{ title: "បង្កើតការបញ្ជាទិញលក់ដុំ | SastraKH Ops" }, { name: "description", content: "Create a bulk order for a customer and send it to them." }, { property: "og:title", content: "SastraKH Bulk Order Form" }, { property: "og:description", content: "Staff-created wholesale orders." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }),
   component: NewOrder,
 });
 
@@ -49,7 +49,7 @@ function NewOrder() {
     setBusy(false);
     if (error) return toast.error(error.message);
     const r = data as { order_no: string; total_usd: number };
-    const text = [`ProvisionKH — ការបញ្ជាទិញ ${r.order_no}`, ...rows.filter((x) => x.p && x.q > 0).map((x) => `• ${x.p!.name_km} × ${x.q} ${x.p!.unit_km} = ${usd(x.total)}`), `សរុប: ${usd(r.total_usd)}`, `ការទូទាត់: ${METHOD_KM[method]}`, `សូមបើកកម្មវិធី → ការបញ្ជាទិញ ដើម្បីមើល និងបង់ប្រាក់។`].join("\n");
+    const text = [`SastraKH — ការបញ្ជាទិញ ${r.order_no}`, ...rows.filter((x) => x.p && x.q > 0).map((x) => `• ${x.p!.name_km} × ${x.q} ${x.p!.unit_km} = ${usd(x.total)}`), `សរុប: ${usd(r.total_usd)}`, `ការទូទាត់: ${METHOD_KM[method]}`, `សូមបើកកម្មវិធី → ការបញ្ជាទិញ ដើម្បីមើល និងបង់ប្រាក់។`].join("\n");
     setSent({ order_no: r.order_no, text, tg: c?.telegram?.replace(/^@|https?:\/\/t\.me\//g, "") || null });
     toast.success(`បានបង្កើត ${r.order_no} — អតិថិជនឃើញនៅក្នុងកម្មវិធី`);
     setLines([{ product_id: "", qty: "1" }]); setNote("");

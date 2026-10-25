@@ -3,7 +3,7 @@ import { ChangePasswordForm } from "@/app/ChangePassword";
 import { usePrefs } from "@/app/prefs";
 
 export const Route = createFileRoute("/_authenticated/admin/account")({
-  head: () => ({ meta: [{ title: "My account — ProvisionKH Admin" }, { name: "description", content: "Change your ProvisionKH staff password." }, { property: "og:title", content: "My account — ProvisionKH Admin" }, { property: "og:description", content: "Change your ProvisionKH staff password." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }),
+  head: () => ({ meta: [{ title: "My account — SastraKH Admin" }, { name: "description", content: "Change your SastraKH staff password." }, { property: "og:title", content: "My account — SastraKH Admin" }, { property: "og:description", content: "Change your SastraKH staff password." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }),
   component: Account,
 });
 

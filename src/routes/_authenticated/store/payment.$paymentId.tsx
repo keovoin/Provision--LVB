@@ -10,9 +10,9 @@ import { toast } from "sonner";
 
 export const Route = createFileRoute("/_authenticated/store/payment/$paymentId")({
   head: () => ({ meta: [
-    { title: "ការបញ្ជាក់ការទូទាត់ | ProvisionKH" },
-    { name: "description", content: "Confirm your KHQR payment and see your ProvisionKH order details and next steps." },
-    { property: "og:title", content: "ProvisionKH Payment Confirmation" },
+    { title: "ការបញ្ជាក់ការទូទាត់ | SastraKH" },
+    { name: "description", content: "Confirm your KHQR payment and see your SastraKH order details and next steps." },
+    { property: "og:title", content: "SastraKH Payment Confirmation" },
     { property: "og:description", content: "Confirm your payment and track your wholesale order." },
     { property: "og:type", content: "website" },
     { name: "twitter:card", content: "summary" },

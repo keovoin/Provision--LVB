@@ -8,7 +8,7 @@ import { PageHead, SkeletonRows, StatusBadge, day, usd } from "@/app/admin-ui";
 
 interface Order { id: string; order_no: string | null; status: string; total_usd: number; created_at: string; profiles: { business_name: string | null; name: string } | null }
 export const Route = createFileRoute("/_authenticated/admin/")({
-  head: () => ({ meta: [{ title: "ប្រតិបត្តិការ | ProvisionKH" }, { name: "description", content: "ProvisionKH wholesale operations dashboard." }, { property: "og:title", content: "ProvisionKH Operations" }, { property: "og:description", content: "Wholesale operations dashboard." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }),
+  head: () => ({ meta: [{ title: "ប្រតិបត្តិការ | SastraKH" }, { name: "description", content: "SastraKH wholesale operations dashboard." }, { property: "og:title", content: "SastraKH Operations" }, { property: "og:description", content: "Wholesale operations dashboard." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }),
   component: Dashboard,
 });
 

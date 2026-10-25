@@ -13,7 +13,7 @@ type Method = "cod" | "khqr" | "link" | "net30";
 const METHODS: [Method, string, string, typeof Banknote][] = [["cod", "សាច់ប្រាក់ពេលដឹក", "Cash on delivery", Banknote], ["khqr", "KHQR", "Scan to pay", QrCode], ["link", "តំណបង់ប្រាក់", "Payment link", Link2], ["net30", "ឥណទាន", "Net credit", Wallet]];
 
 export const Route = createFileRoute("/_authenticated/store/order/$orderId")({
-  head: () => ({ meta: [{ title: "កែការបញ្ជាទិញ | ProvisionKH" }, { name: "description", content: "Review and edit your order's delivery address and payment method." }, { property: "og:title", content: "Edit order | ProvisionKH" }, { property: "og:description", content: "Change delivery address and payment before confirming." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }),
+  head: () => ({ meta: [{ title: "កែការបញ្ជាទិញ | SastraKH" }, { name: "description", content: "Review and edit your order's delivery address and payment method." }, { property: "og:title", content: "Edit order | SastraKH" }, { property: "og:description", content: "Change delivery address and payment before confirming." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }),
   component: OrderEdit,
 });
 

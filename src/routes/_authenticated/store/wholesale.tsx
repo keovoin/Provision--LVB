@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/design-system/provisionkh";
 import { supabase } from "@/integrations/supabase/client";
 
 export const Route = createFileRoute("/_authenticated/store/wholesale")({
-  head: () => ({ meta: [{ title: "តម្លៃលក់ដុំ | ProvisionKH" }, { name: "description", content: "តម្លៃលក់ដុំ ការបញ្ជាទិញអប្បបរមា និងព័ត៌មានដឹកជញ្ជូន ProvisionKH។" }, { property: "og:title", content: "ProvisionKH តម្លៃលក់ដុំ" }, { property: "og:description", content: "ទិញច្រើន តម្លៃថោកជាង។" }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }),
+  head: () => ({ meta: [{ title: "តម្លៃលក់ដុំ | SastraKH" }, { name: "description", content: "តម្លៃលក់ដុំ ការបញ្ជាទិញអប្បបរមា និងព័ត៌មានដឹកជញ្ជូន SastraKH។" }, { property: "og:title", content: "SastraKH តម្លៃលក់ដុំ" }, { property: "og:description", content: "ទិញច្រើន តម្លៃថោកជាង។" }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }),
   component: WholesaleStore,
 });
 

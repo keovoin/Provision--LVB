@@ -12,7 +12,7 @@ import { ProductBuilder } from "@/app/ProductBuilder";
 import { ProductMediaManager } from "@/app/ProductMediaManager";
 
 interface Row { id: string; sku: string; name_km: string; name_en: string; unit_km: string; stock_qty: number; reorder_threshold: number; photo_url: string | null; product_prices: { qty_min: number; price_usd: number }[] }
-export const Route = createFileRoute("/_authenticated/admin/products")({ head: () => ({ meta: [{ title: "ទំនិញ | ProvisionKH Ops" }, { name: "description", content: "Manage ProvisionKH wholesale inventory and discount tiers." }, { property: "og:title", content: "ProvisionKH Products" }, { property: "og:description", content: "Wholesale inventory and pricing tiers." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }), component: ProductsPage });
+export const Route = createFileRoute("/_authenticated/admin/products")({ head: () => ({ meta: [{ title: "ទំនិញ | SastraKH Ops" }, { name: "description", content: "Manage SastraKH wholesale inventory and discount tiers." }, { property: "og:title", content: "SastraKH Products" }, { property: "og:description", content: "Wholesale inventory and pricing tiers." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }), component: ProductsPage });
 
 function ProductsPage() {
   const [rows, setRows] = useState<Row[]>([]);

@@ -7,7 +7,7 @@ import { PageHead, inputCls, toast, usd } from "@/app/admin-ui";
 import { ScanCamera } from "@/app/ScanCamera";
 
 export const Route = createFileRoute("/_authenticated/admin/pos")({
-  head: () => ({ meta: [{ title: "លក់ផ្ទាល់ POS | ProvisionKH Ops" }, { name: "description", content: "Walk-in counter sales with barcode scanning and receipt." }, { property: "og:title", content: "ProvisionKH POS" }, { property: "og:description", content: "Warehouse counter sales." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }),
+  head: () => ({ meta: [{ title: "លក់ផ្ទាល់ POS | SastraKH Ops" }, { name: "description", content: "Walk-in counter sales with barcode scanning and receipt." }, { property: "og:title", content: "SastraKH POS" }, { property: "og:description", content: "Warehouse counter sales." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }),
   component: Pos,
 });
 
@@ -65,7 +65,7 @@ function Pos() {
     {done && <Card className="mt-5 border-success/40"><CardContent className="space-y-3 p-4">
       <p className="font-semibold">បានលក់រួច {done.sale_no} — {usd(done.total)} ({done.method === "cash" ? "សាច់ប្រាក់" : "KHQR"})</p>
       <div id="receipt" className="rounded-control border border-border bg-white p-4 font-sans text-sm text-black print:border-0">
-        <p className="text-center text-base font-bold">ProvisionKH</p>
+        <p className="text-center text-base font-bold">SastraKH</p>
         <p className="text-center text-xs">បង្កាន់ដៃលក់ / Sale receipt</p>
         <p className="mt-2 text-xs">{done.sale_no} · {new Date().toLocaleString("km-KH")}</p>
         <hr className="my-2" />

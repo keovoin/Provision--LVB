@@ -7,7 +7,7 @@ import { PageHead, toast, usd } from "@/app/admin-ui";
 import { IMPORT_COLUMNS, parseProductRows, slugify, type ImportCategory, type ImportResult } from "@/app/product-import";
 
 export const Route = createFileRoute("/_authenticated/admin/bulk-upload")({
-  head: () => ({ meta: [{ title: "នាំចូលទំនិញ | ProvisionKH Ops" }, { name: "description", content: "Bulk upload ProvisionKH products from Excel." }, { property: "og:title", content: "ProvisionKH Bulk Product Upload" }, { property: "og:description", content: "Upload many products at once from Excel." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }),
+  head: () => ({ meta: [{ title: "នាំចូលទំនិញ | SastraKH Ops" }, { name: "description", content: "Bulk upload SastraKH products from Excel." }, { property: "og:title", content: "SastraKH Bulk Product Upload" }, { property: "og:description", content: "Upload many products at once from Excel." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }),
   component: ImportPage,
 });
 

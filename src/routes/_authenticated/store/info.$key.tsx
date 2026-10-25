@@ -32,9 +32,9 @@ export const Route = createFileRoute("/_authenticated/store/info/$key")({
     const page = pages[params.key as InfoKey];
     return {
       meta: [
-        { title: `${page?.en ?? "Info"} — ProvisionKH` },
+        { title: `${page?.en ?? "Info"} — SastraKH` },
         { name: "description", content: page?.en ?? "Store information" },
-        { property: "og:title", content: `${page?.en ?? "Info"} — ProvisionKH` },
+        { property: "og:title", content: `${page?.en ?? "Info"} — SastraKH` },
         { property: "og:description", content: page?.en ?? "Store information" },
         { property: "og:type", content: "website" },
         { name: "twitter:card", content: "summary" },
