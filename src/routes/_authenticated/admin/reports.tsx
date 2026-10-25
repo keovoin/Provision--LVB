@@ -7,7 +7,7 @@ import { METHOD_KM, PageHead, SkeletonRows, inputCls, toast, usd } from "@/app/a
 import { summarize, type ReportOrder } from "@/app/sales-report";
 
 export const Route = createFileRoute("/_authenticated/admin/reports")({
-  head: () => ({ meta: [{ title: "របាយការណ៍លក់ | ProvisionKH Ops" }, { name: "description", content: "ProvisionKH sales report and Excel export." }, { property: "og:title", content: "ProvisionKH Sales Report" }, { property: "og:description", content: "Sales dashboard and Excel export." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }),
+  head: () => ({ meta: [{ title: "របាយការណ៍លក់ | SastraKH Ops" }, { name: "description", content: "SastraKH sales report and Excel export." }, { property: "og:title", content: "SastraKH Sales Report" }, { property: "og:description", content: "Sales dashboard and Excel export." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }),
   component: ReportsPage,
 });
 
